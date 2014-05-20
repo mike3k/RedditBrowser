@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		275F418B192BC99500AD33FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F418A192BC99500AD33FC /* Foundation.framework */; };
+		275F418D192BC99500AD33FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F418C192BC99500AD33FC /* CoreGraphics.framework */; };
+		275F418F192BC99500AD33FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F418E192BC99500AD33FC /* UIKit.framework */; };
+		275F4195192BC99500AD33FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 275F4193192BC99500AD33FC /* InfoPlist.strings */; };
+		275F4197192BC99500AD33FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F4196192BC99500AD33FC /* main.m */; };
+		275F419B192BC99500AD33FC /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F419A192BC99500AD33FC /* MCAppDelegate.m */; };
+		275F419E192BC99500AD33FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275F419C192BC99500AD33FC /* Main.storyboard */; };
+		275F41A1192BC99500AD33FC /* MCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F41A0192BC99500AD33FC /* MCMasterViewController.m */; };
+		275F41A4192BC99500AD33FC /* MCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F41A3192BC99500AD33FC /* MCDetailViewController.m */; };
+		275F41A6192BC99500AD33FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275F41A5192BC99500AD33FC /* Images.xcassets */; };
+		275F41AD192BC99500AD33FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F41AC192BC99500AD33FC /* XCTest.framework */; };
+		275F41AE192BC99500AD33FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F418A192BC99500AD33FC /* Foundation.framework */; };
+		275F41AF192BC99500AD33FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275F418E192BC99500AD33FC /* UIKit.framework */; };
+		275F41B7192BC99500AD33FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 275F41B5192BC99500AD33FC /* InfoPlist.strings */; };
+		275F41B9192BC99500AD33FC /* RedditBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F41B8192BC99500AD33FC /* RedditBrowserTests.m */; };
+		279106241943BBC60074E716 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 279106141943BBC60074E716 /* AFNetworkActivityIndicatorManager.m */; };
+		279106251943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 279106161943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.m */; };
+		279106261943BBC60074E716 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 279106181943BBC60074E716 /* UIAlertView+AFNetworking.m */; };
+		279106271943BBC60074E716 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2791061A1943BBC60074E716 /* UIButton+AFNetworking.m */; };
+		279106281943BBC60074E716 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2791061C1943BBC60074E716 /* UIImageView+AFNetworking.m */; };
+		279106291943BBC60074E716 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2791061F1943BBC60074E716 /* UIProgressView+AFNetworking.m */; };
+		2791062A1943BBC60074E716 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 279106211943BBC60074E716 /* UIRefreshControl+AFNetworking.m */; };
+		2791062B1943BBC60074E716 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 279106231943BBC60074E716 /* UIWebView+AFNetworking.m */; };
+		27967AF919467EB700F852F6 /* MCTaableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27967AF819467EB700F852F6 /* MCTaableViewCell.m */; };
+		27DBDC92192C0C7600165CF5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC80192C0C7600165CF5 /* AFHTTPRequestOperation.m */; };
+		27DBDC93192C0C7600165CF5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC82192C0C7600165CF5 /* AFHTTPRequestOperationManager.m */; };
+		27DBDC94192C0C7600165CF5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC84192C0C7600165CF5 /* AFHTTPSessionManager.m */; };
+		27DBDC95192C0C7600165CF5 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC87192C0C7600165CF5 /* AFNetworkReachabilityManager.m */; };
+		27DBDC96192C0C7600165CF5 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC89192C0C7600165CF5 /* AFSecurityPolicy.m */; };
+		27DBDC97192C0C7600165CF5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC8B192C0C7600165CF5 /* AFURLConnectionOperation.m */; };
+		27DBDC98192C0C7600165CF5 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC8D192C0C7600165CF5 /* AFURLRequestSerialization.m */; };
+		27DBDC99192C0C7600165CF5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC8F192C0C7600165CF5 /* AFURLResponseSerialization.m */; };
+		27DBDC9A192C0C7600165CF5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC91192C0C7600165CF5 /* AFURLSessionManager.m */; };
+		27DBDCA2192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDC9F192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.m */; };
+		27DBDCA3192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDCA1192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.m */; };
+		27DBDCA6192D866000165CF5 /* MCRedditClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDCA5192D866000165CF5 /* MCRedditClient.m */; };
+		27DBDCA9192DB6E100165CF5 /* MCRedditObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DBDCA8192DB6E100165CF5 /* MCRedditObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		275F41B0192BC99500AD33FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 275F417F192BC99500AD33FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275F4186192BC99500AD33FC;
+			remoteInfo = RedditBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		275F4187192BC99500AD33FC /* RedditBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		275F418A192BC99500AD33FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		275F418C192BC99500AD33FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		275F418E192BC99500AD33FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		275F4192192BC99500AD33FC /* RedditBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditBrowser-Info.plist"; sourceTree = "<group>"; };
+		275F4194192BC99500AD33FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		275F4196192BC99500AD33FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		275F4198192BC99500AD33FC /* RedditBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedditBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		275F4199192BC99500AD33FC /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		275F419A192BC99500AD33FC /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		275F419D192BC99500AD33FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275F419F192BC99500AD33FC /* MCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMasterViewController.h; sourceTree = "<group>"; };
+		275F41A0192BC99500AD33FC /* MCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMasterViewController.m; sourceTree = "<group>"; };
+		275F41A2192BC99500AD33FC /* MCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDetailViewController.h; sourceTree = "<group>"; };
+		275F41A3192BC99500AD33FC /* MCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCDetailViewController.m; sourceTree = "<group>"; };
+		275F41A5192BC99500AD33FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		275F41AB192BC99500AD33FC /* RedditBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedditBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275F41AC192BC99500AD33FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		275F41B4192BC99500AD33FC /* RedditBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedditBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		275F41B6192BC99500AD33FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		275F41B8192BC99500AD33FC /* RedditBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedditBrowserTests.m; sourceTree = "<group>"; };
+		279106131943BBC60074E716 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		279106141943BBC60074E716 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		279106151943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		279106161943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		279106171943BBC60074E716 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		279106181943BBC60074E716 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		279106191943BBC60074E716 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		2791061A1943BBC60074E716 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		2791061B1943BBC60074E716 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		2791061C1943BBC60074E716 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		2791061D1943BBC60074E716 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		2791061E1943BBC60074E716 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		2791061F1943BBC60074E716 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		279106201943BBC60074E716 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		279106211943BBC60074E716 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		279106221943BBC60074E716 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		279106231943BBC60074E716 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		27967AF819467EB700F852F6 /* MCTaableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTaableViewCell.m; sourceTree = "<group>"; };
+		27967AFA19467ECA00F852F6 /* MCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTableViewCell.h; sourceTree = "<group>"; };
+		27DBDC7F192C0C7600165CF5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		27DBDC80192C0C7600165CF5 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		27DBDC81192C0C7600165CF5 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		27DBDC82192C0C7600165CF5 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		27DBDC83192C0C7600165CF5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		27DBDC84192C0C7600165CF5 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		27DBDC85192C0C7600165CF5 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		27DBDC86192C0C7600165CF5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		27DBDC87192C0C7600165CF5 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		27DBDC88192C0C7600165CF5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		27DBDC89192C0C7600165CF5 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		27DBDC8A192C0C7600165CF5 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		27DBDC8B192C0C7600165CF5 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		27DBDC8C192C0C7600165CF5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		27DBDC8D192C0C7600165CF5 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		27DBDC8E192C0C7600165CF5 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		27DBDC8F192C0C7600165CF5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		27DBDC90192C0C7600165CF5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		27DBDC91192C0C7600165CF5 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		27DBDC9D192C0D8A00165CF5 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		27DBDC9E192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		27DBDC9F192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		27DBDCA0192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		27DBDCA1192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		27DBDCA4192D866000165CF5 /* MCRedditClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRedditClient.h; sourceTree = "<group>"; };
+		27DBDCA5192D866000165CF5 /* MCRedditClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRedditClient.m; sourceTree = "<group>"; };
+		27DBDCA7192DB6E100165CF5 /* MCRedditObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRedditObject.h; sourceTree = "<group>"; };
+		27DBDCA8192DB6E100165CF5 /* MCRedditObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRedditObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		275F4184192BC99500AD33FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275F418D192BC99500AD33FC /* CoreGraphics.framework in Frameworks */,
+				275F418F192BC99500AD33FC /* UIKit.framework in Frameworks */,
+				275F418B192BC99500AD33FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275F41A8192BC99500AD33FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275F41AD192BC99500AD33FC /* XCTest.framework in Frameworks */,
+				275F41AF192BC99500AD33FC /* UIKit.framework in Frameworks */,
+				275F41AE192BC99500AD33FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		275F417E192BC99500AD33FC = {
+			isa = PBXGroup;
+			children = (
+				275F4190192BC99500AD33FC /* RedditBrowser */,
+				275F41B2192BC99500AD33FC /* RedditBrowserTests */,
+				275F4189192BC99500AD33FC /* Frameworks */,
+				275F4188192BC99500AD33FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		275F4188192BC99500AD33FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				275F4187192BC99500AD33FC /* RedditBrowser.app */,
+				275F41AB192BC99500AD33FC /* RedditBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		275F4189192BC99500AD33FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				275F418A192BC99500AD33FC /* Foundation.framework */,
+				275F418C192BC99500AD33FC /* CoreGraphics.framework */,
+				275F418E192BC99500AD33FC /* UIKit.framework */,
+				275F41AC192BC99500AD33FC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		275F4190192BC99500AD33FC /* RedditBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				27DBDCA4192D866000165CF5 /* MCRedditClient.h */,
+				27DBDCA5192D866000165CF5 /* MCRedditClient.m */,
+				27DBDCA7192DB6E100165CF5 /* MCRedditObject.h */,
+				27DBDCA8192DB6E100165CF5 /* MCRedditObject.m */,
+				275F4199192BC99500AD33FC /* MCAppDelegate.h */,
+				275F419A192BC99500AD33FC /* MCAppDelegate.m */,
+				275F419C192BC99500AD33FC /* Main.storyboard */,
+				27967AFA19467ECA00F852F6 /* MCTableViewCell.h */,
+				27967AF819467EB700F852F6 /* MCTaableViewCell.m */,
+				275F419F192BC99500AD33FC /* MCMasterViewController.h */,
+				275F41A0192BC99500AD33FC /* MCMasterViewController.m */,
+				275F41A2192BC99500AD33FC /* MCDetailViewController.h */,
+				275F41A3192BC99500AD33FC /* MCDetailViewController.m */,
+				275F41A5192BC99500AD33FC /* Images.xcassets */,
+				27DBDC9B192C0D2400165CF5 /* Submodules */,
+				275F4191192BC99500AD33FC /* Supporting Files */,
+			);
+			path = RedditBrowser;
+			sourceTree = "<group>";
+		};
+		275F4191192BC99500AD33FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				275F4192192BC99500AD33FC /* RedditBrowser-Info.plist */,
+				275F4193192BC99500AD33FC /* InfoPlist.strings */,
+				275F4196192BC99500AD33FC /* main.m */,
+				275F4198192BC99500AD33FC /* RedditBrowser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		275F41B2192BC99500AD33FC /* RedditBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				275F41B8192BC99500AD33FC /* RedditBrowserTests.m */,
+				275F41B3192BC99500AD33FC /* Supporting Files */,
+			);
+			path = RedditBrowserTests;
+			sourceTree = "<group>";
+		};
+		275F41B3192BC99500AD33FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				275F41B4192BC99500AD33FC /* RedditBrowserTests-Info.plist */,
+				275F41B5192BC99500AD33FC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		279106121943BBC60074E716 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				279106131943BBC60074E716 /* AFNetworkActivityIndicatorManager.h */,
+				279106141943BBC60074E716 /* AFNetworkActivityIndicatorManager.m */,
+				279106151943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.h */,
+				279106161943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.m */,
+				279106171943BBC60074E716 /* UIAlertView+AFNetworking.h */,
+				279106181943BBC60074E716 /* UIAlertView+AFNetworking.m */,
+				279106191943BBC60074E716 /* UIButton+AFNetworking.h */,
+				2791061A1943BBC60074E716 /* UIButton+AFNetworking.m */,
+				2791061B1943BBC60074E716 /* UIImageView+AFNetworking.h */,
+				2791061C1943BBC60074E716 /* UIImageView+AFNetworking.m */,
+				2791061D1943BBC60074E716 /* UIKit+AFNetworking.h */,
+				2791061E1943BBC60074E716 /* UIProgressView+AFNetworking.h */,
+				2791061F1943BBC60074E716 /* UIProgressView+AFNetworking.m */,
+				279106201943BBC60074E716 /* UIRefreshControl+AFNetworking.h */,
+				279106211943BBC60074E716 /* UIRefreshControl+AFNetworking.m */,
+				279106221943BBC60074E716 /* UIWebView+AFNetworking.h */,
+				279106231943BBC60074E716 /* UIWebView+AFNetworking.m */,
+			);
+			name = "UIKit+AFNetworking";
+			path = "AFNetworking/UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		27DBDC7E192C0C7600165CF5 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				27DBDC7F192C0C7600165CF5 /* AFHTTPRequestOperation.h */,
+				27DBDC80192C0C7600165CF5 /* AFHTTPRequestOperation.m */,
+				27DBDC81192C0C7600165CF5 /* AFHTTPRequestOperationManager.h */,
+				27DBDC82192C0C7600165CF5 /* AFHTTPRequestOperationManager.m */,
+				27DBDC83192C0C7600165CF5 /* AFHTTPSessionManager.h */,
+				27DBDC84192C0C7600165CF5 /* AFHTTPSessionManager.m */,
+				27DBDC85192C0C7600165CF5 /* AFNetworking.h */,
+				27DBDC86192C0C7600165CF5 /* AFNetworkReachabilityManager.h */,
+				27DBDC87192C0C7600165CF5 /* AFNetworkReachabilityManager.m */,
+				27DBDC88192C0C7600165CF5 /* AFSecurityPolicy.h */,
+				27DBDC89192C0C7600165CF5 /* AFSecurityPolicy.m */,
+				27DBDC8A192C0C7600165CF5 /* AFURLConnectionOperation.h */,
+				27DBDC8B192C0C7600165CF5 /* AFURLConnectionOperation.m */,
+				27DBDC8C192C0C7600165CF5 /* AFURLRequestSerialization.h */,
+				27DBDC8D192C0C7600165CF5 /* AFURLRequestSerialization.m */,
+				27DBDC8E192C0C7600165CF5 /* AFURLResponseSerialization.h */,
+				27DBDC8F192C0C7600165CF5 /* AFURLResponseSerialization.m */,
+				27DBDC90192C0C7600165CF5 /* AFURLSessionManager.h */,
+				27DBDC91192C0C7600165CF5 /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = AFNetworking/AFNetworking;
+			sourceTree = "<group>";
+		};
+		27DBDC9B192C0D2400165CF5 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				27DBDC9C192C0D8A00165CF5 /* SVPullToRefresh */,
+				279106121943BBC60074E716 /* UIKit+AFNetworking */,
+				27DBDC7E192C0C7600165CF5 /* AFNetworking */,
+			);
+			path = Submodules;
+			sourceTree = SOURCE_ROOT;
+		};
+		27DBDC9C192C0D8A00165CF5 /* SVPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				27DBDC9D192C0D8A00165CF5 /* SVPullToRefresh.h */,
+				27DBDC9E192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.h */,
+				27DBDC9F192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.m */,
+				27DBDCA0192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.h */,
+				27DBDCA1192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			name = SVPullToRefresh;
+			path = SVPullToRefresh/SVPullToRefresh;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		275F4186192BC99500AD33FC /* RedditBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275F41BC192BC99500AD33FC /* Build configuration list for PBXNativeTarget "RedditBrowser" */;
+			buildPhases = (
+				275F4183192BC99500AD33FC /* Sources */,
+				275F4184192BC99500AD33FC /* Frameworks */,
+				275F4185192BC99500AD33FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedditBrowser;
+			productName = RedditBrowser;
+			productReference = 275F4187192BC99500AD33FC /* RedditBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		275F41AA192BC99500AD33FC /* RedditBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275F41BF192BC99500AD33FC /* Build configuration list for PBXNativeTarget "RedditBrowserTests" */;
+			buildPhases = (
+				275F41A7192BC99500AD33FC /* Sources */,
+				275F41A8192BC99500AD33FC /* Frameworks */,
+				275F41A9192BC99500AD33FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275F41B1192BC99500AD33FC /* PBXTargetDependency */,
+			);
+			name = RedditBrowserTests;
+			productName = RedditBrowserTests;
+			productReference = 275F41AB192BC99500AD33FC /* RedditBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		275F417F192BC99500AD33FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mike Cohen";
+				TargetAttributes = {
+					275F41AA192BC99500AD33FC = {
+						TestTargetID = 275F4186192BC99500AD33FC;
+					};
+				};
+			};
+			buildConfigurationList = 275F4182192BC99500AD33FC /* Build configuration list for PBXProject "RedditBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 275F417E192BC99500AD33FC;
+			productRefGroup = 275F4188192BC99500AD33FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				275F4186192BC99500AD33FC /* RedditBrowser */,
+				275F41AA192BC99500AD33FC /* RedditBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		275F4185192BC99500AD33FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275F41A6192BC99500AD33FC /* Images.xcassets in Resources */,
+				275F4195192BC99500AD33FC /* InfoPlist.strings in Resources */,
+				275F419E192BC99500AD33FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275F41A9192BC99500AD33FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275F41B7192BC99500AD33FC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275F4183192BC99500AD33FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275F419B192BC99500AD33FC /* MCAppDelegate.m in Sources */,
+				27DBDC96192C0C7600165CF5 /* AFSecurityPolicy.m in Sources */,
+				2791062A1943BBC60074E716 /* UIRefreshControl+AFNetworking.m in Sources */,
+				27967AF919467EB700F852F6 /* MCTaableViewCell.m in Sources */,
+				279106271943BBC60074E716 /* UIButton+AFNetworking.m in Sources */,
+				279106291943BBC60074E716 /* UIProgressView+AFNetworking.m in Sources */,
+				275F41A4192BC99500AD33FC /* MCDetailViewController.m in Sources */,
+				27DBDC93192C0C7600165CF5 /* AFHTTPRequestOperationManager.m in Sources */,
+				279106261943BBC60074E716 /* UIAlertView+AFNetworking.m in Sources */,
+				27DBDC97192C0C7600165CF5 /* AFURLConnectionOperation.m in Sources */,
+				27DBDC92192C0C7600165CF5 /* AFHTTPRequestOperation.m in Sources */,
+				27DBDCA6192D866000165CF5 /* MCRedditClient.m in Sources */,
+				279106281943BBC60074E716 /* UIImageView+AFNetworking.m in Sources */,
+				27DBDCA9192DB6E100165CF5 /* MCRedditObject.m in Sources */,
+				279106251943BBC60074E716 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				279106241943BBC60074E716 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				275F4197192BC99500AD33FC /* main.m in Sources */,
+				27DBDC98192C0C7600165CF5 /* AFURLRequestSerialization.m in Sources */,
+				27DBDC94192C0C7600165CF5 /* AFHTTPSessionManager.m in Sources */,
+				27DBDC95192C0C7600165CF5 /* AFNetworkReachabilityManager.m in Sources */,
+				27DBDC99192C0C7600165CF5 /* AFURLResponseSerialization.m in Sources */,
+				27DBDC9A192C0C7600165CF5 /* AFURLSessionManager.m in Sources */,
+				27DBDCA2192C0D8A00165CF5 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				2791062B1943BBC60074E716 /* UIWebView+AFNetworking.m in Sources */,
+				275F41A1192BC99500AD33FC /* MCMasterViewController.m in Sources */,
+				27DBDCA3192C0D8A00165CF5 /* UIScrollView+SVPullToRefresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275F41A7192BC99500AD33FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275F41B9192BC99500AD33FC /* RedditBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		275F41B1192BC99500AD33FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275F4186192BC99500AD33FC /* RedditBrowser */;
+			targetProxy = 275F41B0192BC99500AD33FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		275F4193192BC99500AD33FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275F4194192BC99500AD33FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		275F419C192BC99500AD33FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275F419D192BC99500AD33FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		275F41B5192BC99500AD33FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275F41B6192BC99500AD33FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		275F41BA192BC99500AD33FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		275F41BB192BC99500AD33FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		275F41BD192BC99500AD33FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedditBrowser/RedditBrowser-Prefix.pch";
+				INFOPLIST_FILE = "RedditBrowser/RedditBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		275F41BE192BC99500AD33FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedditBrowser/RedditBrowser-Prefix.pch";
+				INFOPLIST_FILE = "RedditBrowser/RedditBrowser-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		275F41C0192BC99500AD33FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedditBrowser.app/RedditBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedditBrowser/RedditBrowser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedditBrowserTests/RedditBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		275F41C1192BC99500AD33FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedditBrowser.app/RedditBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedditBrowser/RedditBrowser-Prefix.pch";
+				INFOPLIST_FILE = "RedditBrowserTests/RedditBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		275F4182192BC99500AD33FC /* Build configuration list for PBXProject "RedditBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275F41BA192BC99500AD33FC /* Debug */,
+				275F41BB192BC99500AD33FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275F41BC192BC99500AD33FC /* Build configuration list for PBXNativeTarget "RedditBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275F41BD192BC99500AD33FC /* Debug */,
+				275F41BE192BC99500AD33FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275F41BF192BC99500AD33FC /* Build configuration list for PBXNativeTarget "RedditBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275F41C0192BC99500AD33FC /* Debug */,
+				275F41C1192BC99500AD33FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 275F417F192BC99500AD33FC /* Project object */;
+}
